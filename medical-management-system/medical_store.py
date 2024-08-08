@@ -3,7 +3,6 @@ from tkinter import messagebox
 from tkinter import ttk
 import sqlite3
 
-#connect to SQLite database
 conn = sqlite3.connect('medical_store.db')
 cursor = conn.cursor()
 
@@ -283,7 +282,6 @@ def show_login_panel():
 
     login_panel.mainloop()
 
-# Create the root window
 root = tk.Tk()
 root.title("Medical Store Management")
 root.geometry("300x200")
